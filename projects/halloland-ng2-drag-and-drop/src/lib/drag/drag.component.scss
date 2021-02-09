@@ -1,0 +1,22 @@
+:host ::ng-deep ~ #drag_and_drop_clone {
+  position: absolute;
+  pointer-events: none;
+  touch-action: none;
+  -ms-touch-action: none;
+  -webkit-touch-callout: none;
+  z-index: 9999;
+  margin: 0;
+  transition: none !important;
+}
+
+::ng-deep .drag_and_drop_transition {
+  top: 0;
+  left: 0;
+  position: relative;
+  transition: .3s all;
+}
+
+::ng-deep .draggedElement {
+  transition: opacity .2s;
+  opacity: .3;
+}
